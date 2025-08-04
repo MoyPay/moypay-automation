@@ -1,4 +1,4 @@
-# MoyPay Auto-Earn Backend
+# MoyPay Auto-Earn
 
 A TypeScript-based cron job service that automatically executes earning transactions for employees in the MoyPay salary streaming system on Etherlink (Tezos Layer 2).
 

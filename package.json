@@ -1,0 +1,44 @@
+{
+  "name": "moypay-autoearn-backend",
+  "version": "1.0.0",
+  "description": "Auto-earn cronjob backend for MoyPay",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "echo 'No tests specified'",
+    "test:blockchain": "node test-blockchain.js",
+    "format": "prettier --write \"src/**/*.{ts,js,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,js,json}\""
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.1",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/winston": "^2.4.4",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "keywords": [
+    "cronjob",
+    "ethereum",
+    "auto-earn",
+    "defi"
+  ],
+  "author": "MoyPay Team",
+  "license": "MIT",
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
+}

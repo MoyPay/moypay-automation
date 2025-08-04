@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+*.log
+.env
+.env.*
+coverage/
+*.min.js
+*.map
+package-lock.json
+pnpm-lock.yaml
